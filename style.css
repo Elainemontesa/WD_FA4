@@ -1,0 +1,150 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#wrapper {
+    width: 95%;
+    margin: auto;
+    padding: 10px;
+    background-color: white;
+}
+
+.navbar {
+    background-color: whitesmoke;
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+}
+
+.navbar-brand {
+    font-weight: 500;
+    color: #009970;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.navbar-toggler,
+.btn-close {
+    border: none;
+    font-size: 1.5rem;
+}
+
+.navbar-toggler:focus,
+.btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color: #666777;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: #000;
+}
+
+@media (min-width: 991px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background: #009970;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before {
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+#header-banner-div {
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#main-div {
+    width: 100%;
+    min-height: 470px;
+    background-color: transparent;
+    margin-bottom: 10px;
+}
+
+#Sidebar-div {
+    width: 5%;
+    min-height: 470px;
+    float: left;
+    padding: 1rem;
+    text-align: left;
+}
+
+.stickyicon-list {
+    position: fixed;
+    top: 200px;
+    transform: translateY(-50%);
+    }
+    .stickyicon-list a {
+    display: block;
+    text-align: center;
+    padding: 8px;
+    transition: all 0.5s ease;
+    color: white;
+    font-size: 35px;
+    }
+    .stickyicon-list a:hover {
+    color: #000;
+    width:10px;
+    }
+    .facebook {
+        background: whitesmoke;
+        color: white;
+    }
+    .instagram {
+        background: whitesmoke;
+        color: white;
+    }
+
+    #Image1-div, #Image2-div, #Image3-div, #Image4-div, #Image5-div {
+        width: 15%;
+        text-align: center;
+        min-height: 100px;
+        float: left;
+        margin: 1.66%;
+        background-color: #009970;
+    }
+
+    #Image1-div img, #Image2-div img, #Image3-div img, #Image4-div img, #Image5-div img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #Content-div {
+        width: 95%;
+        min-height: 400px;
+        background-color: #009970;
+        float: right;
+    }
+
+    footer {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+        background-color: white;
+    }
